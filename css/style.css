@@ -6,6 +6,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  width: 100%;
 }
 .container {
   max-width: 1190px;
@@ -475,10 +476,21 @@ footer {
 }
 
 .row-footer {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  display: flex;
+ width: 100%;
+  justify-content: space-between;
+  align-items: center;
+flex-wrap: wrap;
   gap: 30px;
+}
+.row-footer .col {
+ min-width: 200px;
+  max-width: 300px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 footer ul {
